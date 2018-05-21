@@ -1,20 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Square {
-	
+
+public class Snake{
+
 	private List<Piece> pieces;
-	private int number;
-	private boolean goal;
+	private int head;
+	private int tail;
 	
-	public Square(int number) {
-		this.number = number;
+	public Snake(int head, int tail) {
+		this.head = head;
+		this.tail = tail;
 		pieces = new ArrayList<Piece>();
-		goal = false;
-	}
-	
-	public void setGoal(boolean goal) {
-		this.goal = goal;
 	}
 	
 	public void addPiece1(Piece piece) {
@@ -29,12 +26,12 @@ public class Square {
 		return pieces.contains(piece);
 	}
 	
-	public boolean isGoal() {
-		return goal;
+	public int getHead() {
+		return head;
 	}
 	
-	public int getNumber() {
-		return number;
+	public int getTail() {
+		return tail;
 	}
 
 }

@@ -8,7 +8,6 @@ public class Die {
 		face = 1;
 	}
 	
-
 	public int getFace() {
 		return face;
 	}
@@ -16,6 +15,14 @@ public class Die {
 	public void roll() {
 		// TODO Auto-generated method stub
 		face = 1 + new Random().nextInt(MAX_FACE);
+	}
+	
+//	public void roll() {
+//		face = 14;
+//	}
+	
+	public void setDieFace(int face) {
+		this.face = face;
 	}
 
 }
